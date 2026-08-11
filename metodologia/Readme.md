@@ -4,15 +4,9 @@
 <h2>Sobre mim</h2>
 <p align="center"><img src="./assets/ImagemPerfil.jpeg" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
 
-Comecei minha carreira trabalhando com gestão de tráfego de dados, onde percebi o quanto a automação pode facilitar a organização e análise de informações. Isso despertou meu interesse pela programação, especialmente Python, que me mostrou as diversas oportunidades que esse campo oferece.
+Comecei minha jornada cursando Analise e Desenvolvimento de Sistemas na ETEP de São José dos Campos, e durante esse tempo, atuava como N2, em suporte à aplicação. Nesse momento, entendi que gostaria de cursar algo relacionado a banco de dados especificamente. 
 
-Em 2022, dei um grande passo ao iniciar o curso de Banco de Dados na FATEC. Desde então, venho melhorando minhas habilidades em desenvolvimento de backend e administração de bancos de dados.
-
-Tenho experiência na construção de projetos web usando Java (SpringBoot) e JavaScript (Node.js, React.js, Typescript), sempre priorizando a experiência do usuário e buscando melhorar a performance e a qualidade do código.
-
-Já trabalhei em empresa como APTIV, uma empresa do segmento automotivo, onde pude trabalhar em um laboratório de engenharia. Minha função envolvia o uso de Python para automatizar máquinas, realizar testes de equipamentos e registrar informações.
-
-Além disso, também trabalho em outra empresa, onde utilizo desde ferramentas de low code até a codificação direta no desenvolvimento de demandas de produtos personalizados para empresas que entram em contato conosco.
+Após essa decisão, entendi que precisaria dar um próximo passo, e decidi cursar uma pós-graduação em Administração de Banco de Dados, que é onde em minha ocupação na época, avancei de suporte para ser responsável pelas bases de dados da empresa e ainda sim, decidi que precisava
 
 ## Contatos
 * [Git](https://github.com/fagnerlouis)
