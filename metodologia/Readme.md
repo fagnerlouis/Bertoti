@@ -4,9 +4,14 @@
 <h2>Sobre mim</h2>
 <p align="center"><img src="./assets/ImagemPerfil.jpeg" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
 
-Comecei minha jornada cursando Analise e Desenvolvimento de Sistemas na ETEP de São José dos Campos, e durante esse tempo, atuava como N2, em suporte à aplicação. Nesse momento, entendi que gostaria de cursar algo relacionado a banco de dados especificamente. 
+Comecei minha trajetória na área de tecnologia cursando Análise e Desenvolvimento de Sistemas na ETEP de São José dos Campos. Durante esse período, atuei como suporte N2, trabalhando com aplicações, consultas em banco de dados e análise de problemas. Foi nessa experiência que descobri meu interesse pela área de banco de dados.
 
-Após essa decisão, entendi que precisaria dar um próximo passo, e decidi cursar uma pós-graduação em Administração de Banco de Dados, que é onde em minha ocupação na época, avancei de suporte para ser responsável pelas bases de dados da empresa e ainda sim, decidi que precisava
+Buscando me especializar, iniciei uma pós-graduação em Administração de Banco de Dados e, durante minha atuação profissional, passei a assumir responsabilidades relacionadas à administração e manutenção das bases de dados da empresa. Essa experiência reforçou minha decisão de seguir carreira na área de dados.
+
+Posteriormente, iniciei o curso de Banco de Dados na FATEC Prof. Jessen Vidal, buscando complementar minha formação e aprofundar meus conhecimentos. Ao longo dessa trajetória, também desenvolvi experiência com tecnologias como SQL, PostgreSQL, SQL Server e SAP HANA, além de linguagens como Java e JavaScript.
+
+Atualmente, busco consolidar minha carreira na área de banco de dados, unindo minha experiência profissional com a formação acadêmica e ampliando meus conhecimentos em administração, desenvolvimento e otimização de bases de dados.
+
 
 ## Contatos
 * [Git](https://github.com/fagnerlouis)
@@ -19,14 +24,11 @@ Após essa decisão, entendi que precisaria dar um próximo passo, e decidi curs
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Spring](https://img.shields.io/badge/Spring-6DB33F?style=for-the-badge&logo=spring&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=for-the-badge&logo=javascript&logoColor=black)
-![NodeJs](https://camo.githubusercontent.com/b0432ab0567d45add9bf155718ab7de57c330cd3acd719374fae0384e95688c2/68747470733a2f2f696d672e736869656c64732e696f2f62616467652f4e6f64652e6a732d3433383533443f7374796c653d666f722d7468652d6261646765266c6f676f3d6e6f64652e6a73266c6f676f436f6c6f723d7768697465)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=for-the-badge&logo=html5&logoColor=white)
 ![CSS](https://img.shields.io/badge/CSS3-1572B6?style=for-the-badge&logo=css3&logoColor=white)
 ![React](https://img.shields.io/badge/React-20232A?style=for-the-badge&logo=react&logoColor=61DAFB)
-![Python](https://img.shields.io/badge/Python-14354C?style=for-the-badge&logo=python&logoColor=white)
-![Styled Components](https://img.shields.io/badge/styled--components-DB7093?style=for-the-badge&logo=styled-components&logoColor=white)
 ![MySQL](https://img.shields.io/badge/MySQL-00000F?style=for-the-badge&logo=mysql&logoColor=white)
-![Postgre](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
+![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
 
 
 
