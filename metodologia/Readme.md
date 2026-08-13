@@ -64,33 +64,16 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
 <details>
   <summary>Atuei como Product Owner</summary>
-    Esse código cria uma interface gráfica simples para uma tela de login usando a biblioteca PySimpleGUI.
-    Define o tema visual da interface (LightGreen1) para determinar as cores e o estilo.
-    É montada uma estrutura que organiza os elementos visuais, como caixas de texto, campos de entrada, um botão, e uma opção para salvar o login.
-
+    Foi feito todo o levantamento de requisitos em conjunto com o cliente e a construção de todas as User Stories.
+    Todo o gerenciamento de prioridades das entregas e construção de toda a documentação do projeto.
 </details>
-
-<details>
-  <summary>Configuração da interface da tela de login</summary>
-    <img src="./assets/gui-login-api1.png" alt="Descrição da imagem">
-    Esse código cria uma interface gráfica simples para uma tela de login usando a biblioteca PySimpleGUI.
-    Define o tema visual da interface (LightGreen1) para determinar as cores e o estilo.
-    É montada uma estrutura que organiza os elementos visuais, como caixas de texto, campos de entrada, um botão, e uma opção para salvar o login.
-
-</details>
-
-<details>
-  <summary>Configuração da lógica da tela de login</summary>
-    <img src="./assets/logica-login-api1.png" alt="Descrição da imagem">
-    Esse código adiciona a lógica funcional à interface de login criada no tópico anterior. Ele fica em um loop contínuo, aguardando interações do usuário com a janela.
-</details>
-
 
 
 #### Hard Skills
 
-- **Python** : Sei fazer com autonomia
-- **Notion** : Sei fazer com autonomia
+- **SQL** : Sei fazer com autonomia
+- **Jira** : Sei fazer com autonomia
+- **Modelagem** : Sei fazer com autonomia
 
 
 #### Soft Skills
