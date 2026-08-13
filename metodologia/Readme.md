@@ -2,7 +2,7 @@
 
 
 <h2>Sobre mim</h2>
-<p align="center"><img src="./assets/ImagemPerfil.jpeg" width="20%" style="border-radius: 50%; width: 150px; height: 150px; display: block; margin: 0 auto;"></p>
+<p align="center"><img src="./assets/ImagemPerfil.jpeg" width="20%" style="border-radius: 50%; width: 250px; height: 250px; display: block; margin: 0 auto;"></p>
 
 Comecei minha trajetória na área de tecnologia cursando Análise e Desenvolvimento de Sistemas na ETEP de São José dos Campos. Durante esse período, atuei como suporte N2, trabalhando com aplicações, consultas em banco de dados e análise de problemas. Foi nessa experiência que descobri meu interesse pela área de banco de dados.
 
