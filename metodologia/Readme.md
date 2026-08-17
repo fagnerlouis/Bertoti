@@ -66,10 +66,27 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   <summary><strong>Product Owner</strong></summary>
   <br>
 
-  - **Levantamento de requisitos**: condução das reuniões com o cliente (IPEM) para entendimento das necessidades e definição do escopo do sistema.
+  - **Levantamento de requisitos**: comunicação constante com o cliente (IPEM) via Slack, tirando dúvidas sobre as funcionalidades e coletando as informações necessárias para a construção das User Stories.
+  - **Validação de wireframes**: envio dos wireframes para aprovação do cliente, garantindo alinhamento entre o que estava sendo desenvolvido e a expectativa do usuário final.
   - **Construção das User Stories**: elaboração de todas as histórias de usuário do projeto, servindo de base para o planejamento das sprints.
   - **Priorização de entregas**: gerenciamento contínuo das prioridades do backlog ao longo do desenvolvimento.
   - **Documentação do projeto**: estruturação e escrita de toda a documentação (requisitos, escopo e entregas).
+
+  <br>
+
+  **Documentos produzidos:**
+
+  - [Dicionário de Dados](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Dicionario%20de%20dados.md)
+    <br>
+    <img src="./assets/dicionario_dados.png" width="200">
+
+  - [Manual Técnico](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Manual%20Tecnico.md)
+    <br>
+    <img src="./assets/manual_tecnico.png" width="200">
+
+  - [Manual do Usuário](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/usuario/Manual%20Usuario.md)
+    <br>
+    <img src="./assets/manual_usuario.png" width="200">
 
 </details>
 
