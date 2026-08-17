@@ -63,11 +63,15 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 #### Contribuições Pessoais
 
 <details>
-  <summary>Atuei como Product Owner</summary>
-    Foi feito todo o levantamento de requisitos em conjunto com o cliente e a construção de todas as User Stories.
-    Todo o gerenciamento de prioridades das entregas e construção de toda a documentação do projeto.
-</details>
+  <summary><strong>Product Owner</strong></summary>
+  <br>
 
+  - **Levantamento de requisitos**: condução das reuniões com o cliente (IPEM) para entendimento das necessidades e definição do escopo do sistema.
+  - **Construção das User Stories**: elaboração de todas as histórias de usuário do projeto, servindo de base para o planejamento das sprints.
+  - **Priorização de entregas**: gerenciamento contínuo das prioridades do backlog ao longo do desenvolvimento.
+  - **Documentação do projeto**: estruturação e escrita de toda a documentação (requisitos, escopo e entregas).
+
+</details>
 
 #### Hard Skills
 
