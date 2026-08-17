@@ -1,6 +1,3 @@
-
-
-
 <h2>Sobre mim</h2>
 <p align="center"><img src="./assets/ImagemPerfil.jpeg" width="20%" style="border-radius: 50%; width: 250px; height: 250px; display: block; margin: 0 auto;"></p>
 
