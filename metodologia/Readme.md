@@ -108,11 +108,16 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
     <img src="./assets/mapa.png" width="600">
 
 </details>
+
 <details>
   <summary><strong>Modelagem do Banco de Dados</strong></summary>
   <br>
 
-  - **Modelagem completa (MER)**: responsável pela modelagem de todo o banco de dados do projeto, definindo entidades, relacionamentos e regras de integridade.
+  - **Modelagem completa (MER)**: responsável pela modelagem de todo o banco de dados do projeto, definindo entidades, relacionamentos e regras de integridade. Diagrama construído em Mermaid e evoluído ao longo do projeto conforme o schema foi sendo ajustado às novas funcionalidades.
+
+    <br>
+    <img src="./assets/modelagem.png" width="700">
+
   - **Dicionário de Dados**: elaboração do dicionário de dados completo, documentando todas as tabelas, colunas, tipos e restrições do sistema.
 
   <br>
