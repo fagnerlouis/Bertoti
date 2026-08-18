@@ -68,6 +68,18 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - **Inicialização do banco**: configuração de criação automática do banco de dados (`create database if not exists`) para simplificar o setup em novos ambientes.
   - **Ajustes de setup inicial**: correções de configuração de senha, importação de seeds e ajustes de CSS realizados na primeira sprint do projeto.
 
+  <br>
+
+  **📎 Evidências da infraestrutura:**
+
+  - 🗄️ Instância RDS
+    <br>
+    <img src="./assets/banco_rds.png" width="300">
+
+  - 💻 Instância EC2
+    <br>
+    <img src="./assets/instancia_ec2.png" width="300">
+
 </details>
 
 <details>
