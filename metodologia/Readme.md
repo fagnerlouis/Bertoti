@@ -88,8 +88,20 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
   - **Migração da lógica para o backend**: centralização das chamadas à API de geolocalização, que antes eram feitas pelo frontend, passando a serem requisitadas pelo back-end.
   - **Fallback por texto**: implementação de busca de latitude/longitude por texto quando o CEP não é informado pelo usuário.
+
+    <br>
+    <img src="./assets/geolocalizacao_por_texto.png" width="500">
+
+  - **Consulta de CEP**: integração com API de consulta de CEP para preenchimento automático de endereço, bairro, cidade e UF, com tratamento de erro caso o CEP não seja encontrado.
+
+    <br>
+    <img src="./assets/api_consulta.png" width="400">
+
   - **Otimização de performance**: cache de pontos já pesquisados, reduzindo chamadas repetidas à API e acelerando o carregamento do mapa.
   - **Refatoração da renderização**: separação da lógica de renderização do mapa da lógica de busca de dados.
+
+    <br>
+    <img src="./assets/mapa.png" width="600">
 
 </details>
 
