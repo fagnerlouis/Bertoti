@@ -60,6 +60,45 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 #### Contribuições Pessoais
 
 <details>
+  <summary><strong>Infraestrutura e Deploy</strong></summary>
+  <br>
+
+  - **Configuração de ambiente AWS**: configuração do `application.properties` para conexão com o banco de dados via AWS RDS.
+  - **Containerização**: configuração de Docker e variáveis de ambiente para o deploy na AWS.
+  - **Inicialização do banco**: configuração de criação automática do banco de dados (`create database if not exists`) para simplificar o setup em novos ambientes.
+  - **Ajustes de setup inicial**: correções de configuração de senha, importação de seeds e ajustes de CSS realizados na primeira sprint do projeto.
+
+</details>
+
+<details>
+  <summary><strong>Geolocalização e Integração com API de Endereços</strong></summary>
+  <br>
+
+  - **Migração da lógica para o backend**: centralização das chamadas à API de geolocalização, que antes eram feitas pelo frontend, passando a serem requisitadas pelo back-end.
+  - **Fallback por texto**: implementação de busca de latitude/longitude por texto quando o CEP não é informado pelo usuário.
+  - **Otimização de performance**: cache de pontos já pesquisados, reduzindo chamadas repetidas à API e acelerando o carregamento do mapa.
+  - **Refatoração da renderização**: separação da lógica de renderização do mapa da lógica de busca de dados.
+
+</details>
+
+<details>
+  <summary><strong>Modelagem do Banco de Dados</strong></summary>
+  <br>
+
+  - **Modelagem completa (MER)**: responsável pela modelagem de todo o banco de dados do projeto, definindo entidades, relacionamentos e regras de integridade.
+  - **Dicionário de Dados**: elaboração do dicionário de dados completo, documentando todas as tabelas, colunas, tipos e restrições do sistema.
+
+  <br>
+
+  **📎 Documento produzido:**
+
+  - 📊 [Dicionário de Dados](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Dicionario%20de%20dados.md)
+    <br>
+    <img src="./assets/dicionario_dados.png" width="200">
+
+</details>
+
+<details>
   <summary><strong>Product Owner</strong></summary>
   <br>
 
@@ -71,17 +110,13 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
   <br>
 
-  **Documentos produzidos:**
+  **📎 Documentos produzidos:**
 
-  - [Dicionário de Dados](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Dicionario%20de%20dados.md)
-    <br>
-    <img src="./assets/dicionario_dados.png" width="200">
-
-  - [Manual Técnico](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Manual%20Tecnico.md)
+  - 📘 [Manual Técnico](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/tecnico/Manual%20Tecnico.md)
     <br>
     <img src="./assets/manual_tecnico.png" width="200">
 
-  - [Manual do Usuário](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/usuario/Manual%20Usuario.md)
+  - 📗 [Manual do Usuário](https://github.com/LizardsDBA/API-2026-3/blob/main/docs/manuais/usuario/Manual%20Usuario.md)
     <br>
     <img src="./assets/manual_usuario.png" width="200">
 
