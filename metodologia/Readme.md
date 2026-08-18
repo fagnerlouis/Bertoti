@@ -86,7 +86,11 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   <summary><strong>Geolocalização e Integração com API de Endereços</strong></summary>
   <br>
 
-  - **Migração da lógica para o backend**: centralização das chamadas à API de geolocalização, que antes eram feitas pelo frontend, passando a serem requisitadas pelo back-end.
+  - **Migração da lógica para o backend**: centralização das chamadas à API de geolocalização, que antes eram feitas pelo frontend, passando a serem requisitadas pelo back-end. Eliminação do loop de geocodificação síncrona no carregamento da tela (que aplicava um delay de 1.1s por destino para respeitar o rate limit da API), passando a calcular a latitude/longitude uma única vez no momento do registro de saída da viatura — sem mais onerar o carregamento do dashboard.
+
+    <br>
+    <img src="./assets/remove_for.png" width="700">
+
   - **Fallback por texto**: implementação de busca de latitude/longitude por texto quando o CEP não é informado pelo usuário.
 
     <br>
@@ -104,7 +108,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
     <img src="./assets/mapa.png" width="600">
 
 </details>
-
 <details>
   <summary><strong>Modelagem do Banco de Dados</strong></summary>
   <br>
