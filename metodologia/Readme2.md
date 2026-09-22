@@ -165,13 +165,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Investigação e validação de dados;
   - Análise de falhas em processos de integração e sincronização.
 
-- **DBeaver**
-  - Criação e gerenciamento de conexões com bancos de dados;
-  - Execução de scripts e consultas SQL;
-  - Navegação entre schemas, tabelas e registros;
-  - Análise e validação de dados;
-  - Consultas para troubleshooting de integrações.
-
 - **Git / GitHub**
   - `git clone`, `git add`, `git commit`, `git push` e `git pull`;
   - Criação e utilização de branches;
@@ -180,36 +173,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Versionamento e desenvolvimento colaborativo;
   - Organização e manutenção de documentação no GitHub.
 
-##### 📘 O que desenvolvi (Conhecimento intermediário)
-
-- **Java / Spring Boot**
-  - Programação Orientada a Objetos;
-  - Criação e organização de projetos com Spring Boot;
-  - Estruturação de aplicações em `Controller`, `Service` e `Repository`;
-  - Integração de aplicações com banco de dados;
-  - Desenvolvimento acadêmico de aplicações Backend.
-
-- **APIs REST**
-  - Métodos `GET`, `POST`, `PUT` e `DELETE`;
-  - Criação e consumo de endpoints;
-  - Utilização de parâmetros e corpo das requisições;
-  - Desenvolvimento acadêmico de APIs REST com Spring Boot.
-
-- **Insomnia**
-  - Testes de endpoints;
-  - Requisições `GET`, `POST`, `PUT` e `DELETE`;
-  - Configuração de Headers;
-  - Envio de JSON no Body;
-  - Utilização e validação de tokens;
-  - Análise de respostas e códigos HTTP.
-
-- **Docker**
-  - Criação e execução de containers;
-  - Utilização de imagens Docker;
-  - Uso de Docker Compose;
-  - Comandos como `docker ps`, `docker images`, `docker logs`, `docker exec` e `docker stop`;
-  - Análise de logs e troubleshooting básico de containers.
-
 - **Linux**
   - Utilização do Linux como ambiente principal;
   - Navegação e manipulação de arquivos pelo terminal;
@@ -217,30 +180,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Gerenciamento básico de processos e serviços;
   - Comandos como `ls`, `cd`, `cp`, `mv`, `rm`, `grep`, `find`, `chmod`, `ps` e `systemctl`;
   - Experiência com Kubuntu, Ubuntu, Linux Mint e openSUSE.
-
-##### 🌱 O que gostaria de desenvolver e aprofundar
-
-- **PL/SQL**
-  - Estrutura básica `DECLARE`, `BEGIN` e `END`;
-  - Criação de variáveis;
-  - Condições com `IF / ELSE`;
-  - Loops com `LOOP` e `FOR`;
-  - Procedures e Functions;
-  - Tratamento básico de exceções.
-
-- **Spring Security**
-  - Configuração básica do Spring Security;
-  - Autenticação e autorização;
-  - Controle de acesso por usuário e roles;
-  - Proteção de endpoints;
-  - Autenticação utilizando JWT.
-
-- **Microservices**
-  - Estrutura básica de microsserviços;
-  - Criação de serviços independentes;
-  - Comunicação entre APIs;
-  - Requisições HTTP entre serviços;
-  - Integração de microsserviços com banco de dados.
 
 - **AWS**
   - Conceitos básicos de AWS;
@@ -257,15 +196,45 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Deploy de aplicações;
   - Conceitos básicos de escalabilidade e disponibilidade.
 
-- **Kubernetes**
-  - Conceitos de Pods, Deployments e Services;
-  - `kubectl get pods`;
-  - `kubectl get services`;
-  - `kubectl describe pod`;
-  - `kubectl logs`;
-  - `kubectl apply -f`;
-  - `kubectl delete`;
-  - Deploy básico de aplicações em containers.
+
+##### 📘 O que desenvolvi (Conhecimento intermediário)
+
+- **Java / Spring Boot**
+  - Programação Orientada a Objetos;
+  - Criação e organização de projetos com Spring Boot;
+  - Estruturação de aplicações em `Controller`, `Service` e `Repository`;
+  - Integração de aplicações com banco de dados;
+  - Desenvolvimento acadêmico de aplicações Backend.
+
+- **APIs REST**
+  - Métodos `GET`, `POST`, `PUT` e `DELETE`;
+  - Criação e consumo de endpoints;
+  - Utilização de parâmetros e corpo das requisições;
+  - Desenvolvimento acadêmico de APIs REST com Spring Boot.
+
+- **Docker**
+  - Criação e execução de containers;
+  - Utilização de imagens Docker;
+  - Uso de Docker Compose;
+  - Comandos como `docker ps`, `docker images`, `docker logs`, `docker exec` e `docker stop`;
+  - Análise de logs e troubleshooting básico de containers.
+
+
+##### 🌱 O que gostaria de desenvolver e aprofundar
+
+- **Spring Security**
+  - Configuração básica do Spring Security;
+  - Autenticação e autorização;
+  - Controle de acesso por usuário e roles;
+  - Proteção de endpoints;
+  - Autenticação utilizando JWT.
+
+- **Microservices**
+  - Estrutura básica de microsserviços;
+  - Criação de serviços independentes;
+  - Comunicação entre APIs;
+  - Requisições HTTP entre serviços;
+  - Integração de microsserviços com banco de dados.
 
 #### 🤝 Soft Skills
 
@@ -282,6 +251,11 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Participação em reuniões com a equipe;
   - Apresentação de entregas durante as Sprints;
   - Comunicação entre equipe, Product Owner e cliente.
+
+- **Comunicação em Público**
+  - Melhorar apresentações para clientes e equipes;
+  - Desenvolver mais confiança ao apresentar projetos;
+  - Aprimorar a comunicação técnica de forma simples e objetiva.
 
 - **Trabalho em Equipe**
   - Desenvolvimento colaborativo em projetos acadêmicos;
@@ -308,11 +282,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Melhorar a distribuição e acompanhamento de atividades;
   - Aprender a apoiar a equipe na resolução de dificuldades.
 
-- **Comunicação em Público**
-  - Melhorar apresentações para clientes e equipes;
-  - Desenvolver mais confiança ao apresentar projetos;
-  - Aprimorar a comunicação técnica de forma simples e objetiva.
-
 - **Gestão de Projetos**
   - Aprofundar conhecimentos em metodologias ágeis;
   - Melhorar planejamento e acompanhamento de projetos;
@@ -337,10 +306,34 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
 ## Experiência Profissional
 
-**[Nome da sua Empresa Atual ou Anterior] | [Seu Cargo ex: Administrador de Banco de Dados]** *([Mês/Ano de Início] – Atualmente/Ano Fim)*
-> Administração, manutenção e suporte técnico de aplicações e bases de dados.
-- Suporte N2 trabalhando com aplicações, consultas em banco de dados e análise de problemas.
-- Responsável pela administração e manutenção preventiva/corretiva das bases de dados da empresa.
+**SPS Group | Junior SAP Business One Consultant** *(Dezembro/2025 – Atualmente)*
+> Desenvolvimento e customização de ERP na plataforma Aster, integrado ao SAP Business One.
+- Desenvolvimento de queries complexas em SQL Server (T-SQL) e SAP HANA, e uso de JavaScript em estruturas JSON para customizar interface e automatizar regras de negócio.
+- Customização de telas: criação e modificação de campos, botões, validações e fluxos operacionais nas telas do SAP Business One via plataforma Aster.
+- Desenvolvimento de relatórios personalizados, dashboards interativos e layouts de impressão com Crystal Reports (.RPT).
+- Criação de UserPages para suportar processos de negócio específicos de clientes, estendendo as funcionalidades do sistema.
+- Implementação de lógica de negócio via JavaScript event handlers e integrações através das APIs do SAP Service Layer.
+
+**SPS Group | Trainee SAP Business One Consultant** *(Abril/2025 – Dezembro/2025)*
+> Desenvolvimento e customização de ERP na plataforma Aster, integrado ao SAP Business One.
+- Desenvolvimento de queries complexas em SQL Server (T-SQL) e SAP HANA, e uso de JavaScript em estruturas JSON para customizar interface e automatizar regras de negócio.
+- Customização de telas: criação e modificação de campos, botões, validações e fluxos operacionais nas telas do SAP Business One via plataforma Aster.
+- Desenvolvimento de relatórios personalizados, dashboards interativos e layouts de impressão com Crystal Reports (.RPT).
+- Criação de UserPages para suportar processos de negócio específicos de clientes, estendendo as funcionalidades do sistema.
+- Implementação de lógica de negócio via JavaScript event handlers e integrações através das APIs do SAP Service Layer.
+
+**Log Smart Brasil | Senior Support Analyst (N3)** *(Março/2023 – Fevereiro/2025)*
+> Suporte N3 em sistemas WMS e infraestrutura, atuando em chamados de média/alta complexidade.
+- Testes de API utilizando Postman em ambientes locais e de produção.
+- Desenvolvimento de queries avançadas em PostgreSQL, incluindo consultas customizadas para relatórios e análise de dados do sistema.
+- Testes manuais de novas funcionalidades e correções de bugs para garantir estabilidade e precisão funcional do sistema.
+- Manutenção e monitoramento de servidores, garantindo disponibilidade, performance e confiabilidade de aplicações em ambientes Linux.
+
+**MB de Moura Baterias Epp | E-commerce Operations Analyst** *(Janeiro/2018 – Fevereiro/2023)*
+> Atendimento ao cliente, gestão de e-commerce e suporte online, cobrindo atividades de pré-venda e pós-venda.
+- Liderou a implementação da loja online da empresa no Mercado Livre, tornando-se um dos maiores vendedores de baterias de moto na plataforma.
+- Otimizou processos logísticos e de envio, transformando a loja física em ponto de coleta do Mercado Livre, viabilizando operações de despacho internas.
+- A iniciativa aumentou a receita mensal em mais de 40%, atraiu tráfego adicional para a loja física, reduziu a dependência de campanhas pagas no Google Ads e gerou receita adicional via operação de ponto de coleta.
 
 <br><hr><br>
 
