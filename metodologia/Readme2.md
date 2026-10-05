@@ -190,7 +190,6 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - AWS CLI: `aws configure`, `aws s3 ls` e `aws s3 cp`.
 
 - **Cloud Computing**
-  - Conceitos de IaaS, PaaS e SaaS;
   - Máquinas virtuais e armazenamento em nuvem;
   - Banco de dados em Cloud;
   - Deploy de aplicações;
