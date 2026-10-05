@@ -274,7 +274,7 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Identificação de falhas em integrações;
   - Busca pela causa do problema antes do direcionamento para outras equipes.
 
-##### 🌱 O que gostaria de desenvolver
+##### O que gostaria de desenvolver
 
 - **Liderança**
   - Desenvolver minha capacidade de liderar equipes;
