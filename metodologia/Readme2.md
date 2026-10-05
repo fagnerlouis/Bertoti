@@ -54,7 +54,7 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 > - **Git e GitHub**: Essenciais para controle de versão e colaboração entre os membros da equipe, garantindo o gerenciamento eficiente do código.
 > - **Jira**: Ferramenta usada para gerenciar as tarefas do projeto e organizar o fluxo de trabalho da equipe.
 
-#### 👨💻 Contribuições Pessoais
+####  Contribuições Pessoais
 
 <details>
   <summary><strong>Infraestrutura e Deploy</strong></summary>
@@ -151,9 +151,9 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
 </details>
 
-#### 🛠️ Hard Skills
+#### Hard Skills
 
-##### ✅ O que desenvolvi (Com autonomia)
+##### O que desenvolvi (Com autonomia)
 
 - **SQL / MySQL**
   - Consultas utilizando `SELECT`;
@@ -196,7 +196,7 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Conceitos básicos de escalabilidade e disponibilidade.
 
 
-##### 📘 O que desenvolvi (Conhecimento intermediário)
+##### O que desenvolvi (Conhecimento intermediário)
 
 - **Java / Spring Boot**
   - Programação Orientada a Objetos;
@@ -219,7 +219,7 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Análise de logs e troubleshooting básico de containers.
 
 
-##### 🌱 O que gostaria de desenvolver e aprofundar
+##### O que gostaria de desenvolver e aprofundar
 
 - **Spring Security**
   - Configuração básica do Spring Security;
@@ -235,9 +235,9 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
   - Requisições HTTP entre serviços;
   - Integração de microsserviços com banco de dados.
 
-#### 🤝 Soft Skills
+#### Soft Skills
 
-##### ✅ O que desenvolvi
+##### O que desenvolvi
 
 - **Organização**
   - Organização e acompanhamento das Sprints;
