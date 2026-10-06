@@ -153,153 +153,57 @@ FlowTrack — Plataforma de Controle de Abastecimento e Utilização de Viaturas
 
 #### Hard Skills
 
-##### O que desenvolvi (Com autonomia)
+##### O que desenvolvi (com autonomia)
 
-- **SQL / MySQL**
-  - Consultas utilizando `SELECT`;
-  - Filtros com `WHERE`, `AND`, `OR` e `LIKE`;
-  - Relacionamento de tabelas com `INNER JOIN`, `LEFT JOIN` e `RIGHT JOIN`;
-  - Ordenação de resultados com `ORDER BY`;
-  - Utilização de `DISTINCT`;
-  - Funções de agregação como `COUNT`, `SUM`, `AVG`, `MIN` e `MAX`;
-  - Investigação e validação de dados;
-  - Análise de falhas em processos de integração e sincronização.
+**Modelagem de Dados**: Fui responsável pela modelagem completa do banco de dados do projeto, definindo entidades, relacionamentos e regras de integridade. Construí o MER em Mermaid e o evoluí ao longo das sprints conforme novas funcionalidades exigiam ajustes no schema, além de elaborar o dicionário de dados documentando todas as tabelas, colunas, tipos e restrições.
 
-- **Git / GitHub**
-  - `git clone`, `git add`, `git commit`, `git push` e `git pull`;
-  - Criação e utilização de branches;
-  - Merge entre branches;
-  - Resolução de conflitos de merge;
-  - Versionamento e desenvolvimento colaborativo;
-  - Organização e manutenção de documentação no GitHub.
+**SQL / MySQL**: Utilizei SQL no dia a dia do projeto para consultar, filtrar, relacionar e agregar dados (JOINs, funções de agregação, ordenação), principalmente para validar as informações registradas pelo sistema e investigar inconsistências durante os testes das funcionalidades.
 
-- **Linux**
-  - Utilização do Linux como ambiente principal;
-  - Navegação e manipulação de arquivos pelo terminal;
-  - Instalação e atualização de pacotes;
-  - Gerenciamento básico de processos e serviços;
-  - Comandos como `ls`, `cd`, `cp`, `mv`, `rm`, `grep`, `find`, `chmod`, `ps` e `systemctl`;
-  - Experiência com Kubuntu, Ubuntu, Linux Mint e openSUSE.
+**Git / GitHub**: Trabalhei com branches, merges e resolução de conflitos em um repositório compartilhado por toda a equipe, além de organizar e manter a documentação do projeto (manuais técnico e do usuário, dicionário de dados) diretamente no GitHub.
 
-- **AWS**
-  - Conceitos básicos de AWS;
-  - Criação e configuração de instâncias EC2;
-  - Armazenamento com S3;
-  - Banco de dados com RDS;
-  - Deploy básico de aplicações na AWS;
-  - AWS CLI: `aws configure`, `aws s3 ls` e `aws s3 cp`.
+**AWS e Cloud Computing**: Configurei a infraestrutura de deploy do projeto, com a aplicação rodando em uma instância EC2 e o banco de dados no RDS. Ajustei o `application.properties` para a conexão com o RDS e configurei a criação automática do banco (`create database if not exists`) para simplificar o setup em novos ambientes.
 
-- **Cloud Computing**
-  - Máquinas virtuais e armazenamento em nuvem;
-  - Banco de dados em Cloud;
-  - Deploy de aplicações;
-  - Conceitos básicos de escalabilidade e disponibilidade.
+**Linux**: Utilizo Linux como ambiente principal de desenvolvimento, o que me deu autonomia para navegar, configurar e operar o servidor da aplicação pelo terminal durante o deploy e a manutenção do ambiente.
 
+##### O que desenvolvi (conhecimento intermediário)
 
-##### O que desenvolvi (Conhecimento intermediário)
+**Java / Spring Boot**: Atuei no backend migrando as chamadas à API de geolocalização, que antes eram feitas no frontend, para o servidor. Com isso, a latitude/longitude passou a ser calculada uma única vez no registro de saída da viatura, eliminando o loop síncrono (com delay de 1,1s por destino) que deixava o dashboard lento.
 
-- **Java / Spring Boot**
-  - Programação Orientada a Objetos;
-  - Criação e organização de projetos com Spring Boot;
-  - Estruturação de aplicações em `Controller`, `Service` e `Repository`;
-  - Integração de aplicações com banco de dados;
-  - Desenvolvimento acadêmico de aplicações Backend.
+**APIs REST**: Integrei o sistema com uma API de consulta de CEP para preenchimento automático de endereço, com tratamento de erro para CEPs não encontrados, e implementei o fallback de geolocalização por texto quando o CEP não é informado. Também apliquei cache dos pontos já pesquisados para reduzir chamadas repetidas à API.
 
-- **APIs REST**
-  - Métodos `GET`, `POST`, `PUT` e `DELETE`;
-  - Criação e consumo de endpoints;
-  - Utilização de parâmetros e corpo das requisições;
-  - Desenvolvimento acadêmico de APIs REST com Spring Boot.
+**Docker**: Configurei a containerização da aplicação e as variáveis de ambiente necessárias para o deploy na AWS, utilizando logs dos containers para identificar e corrigir problemas de configuração.
 
-- **Docker**
-  - Criação e execução de containers;
-  - Utilização de imagens Docker;
-  - Uso de Docker Compose;
-  - Comandos como `docker ps`, `docker images`, `docker logs`, `docker exec` e `docker stop`;
-  - Análise de logs e troubleshooting básico de containers.
+##### O que gostaria de desenvolver
 
+**Spring Security**: Quero aprofundar autenticação e autorização (roles e JWT), pois a proteção de endpoints e o controle de acesso por perfil de usuário são essenciais em sistemas que lidam com dados de clientes reais, como o do IPEM.
 
-##### O que gostaria de desenvolver e aprofundar
-
-- **Spring Security**
-  - Configuração básica do Spring Security;
-  - Autenticação e autorização;
-  - Controle de acesso por usuário e roles;
-  - Proteção de endpoints;
-  - Autenticação utilizando JWT.
-
-- **Microservices**
-  - Estrutura básica de microsserviços;
-  - Criação de serviços independentes;
-  - Comunicação entre APIs;
-  - Requisições HTTP entre serviços;
-  - Integração de microsserviços com banco de dados.
+**Microsserviços**: Tenho interesse em entender como dividir uma aplicação em serviços independentes que se comunicam por APIs, já que no projeto a integração com serviços externos (CEP e geolocalização) mostrou a importância de separar responsabilidades e isolar dependências.
 
 #### Soft Skills
 
 ##### O que desenvolvi
 
-- **Organização**
-  - Organização e acompanhamento das Sprints;
-  - Gerenciamento das atividades através do Jira;
-  - Organização da documentação no GitHub;
-  - Preparação dos materiais para apresentações.
+**Comunicação**: Como Product Owner, mantive contato constante com o cliente (IPEM) via Slack para tirar dúvidas, coletar requisitos e validar os wireframes antes do desenvolvimento. Ao mesmo tempo, transmiti essa visão para a equipe, alinhando expectativas entre o que o cliente precisava e o que estava sendo construído.
 
-- **Comunicação**
-  - Contato direto com clientes através do Slack e Microsoft Teams;
-  - Participação em reuniões com a equipe;
-  - Apresentação de entregas durante as Sprints;
-  - Comunicação entre equipe, Product Owner e cliente.
+**Organização**: Fui responsável por estruturar e escrever toda a documentação do projeto (requisitos, escopo, manuais e dicionário de dados), além de organizar o backlog e as atividades no Jira, o que deu à equipe uma base clara para o planejamento de cada sprint.
 
-- **Comunicação em Público**
-  - Melhorar apresentações para clientes e equipes;
-  - Desenvolver mais confiança ao apresentar projetos;
-  - Aprimorar a comunicação técnica de forma simples e objetiva.
+**Proatividade**: Mesmo atuando como Product Owner, fui além do papel e contribuí tecnicamente no desenvolvimento, assumindo a infraestrutura de deploy, a modelagem do banco e a refatoração da geolocalização. Também propus melhorias, como mover o cálculo de coordenadas para o backend, que resolveu um problema de performance do dashboard.
 
-- **Trabalho em Equipe**
-  - Desenvolvimento colaborativo em projetos acadêmicos;
-  - Colaboração com Product Owner e desenvolvedores;
-  - Participação nas decisões e melhorias do projeto;
-  - Compartilhamento de ideias e soluções com a equipe.
+**Resolução de Problemas**: Ao identificar a lentidão no carregamento do mapa, investiguei a causa (chamadas síncronas à API com delay por destino) em vez de apenas contornar o sintoma, e implementei uma solução estrutural com cálculo único no registro e cache dos pontos pesquisados.
 
-- **Proatividade**
-  - Proposição de novas funcionalidades e melhorias;
-  - Participação além das responsabilidades de Scrum Master;
-  - Contribuição técnica no desenvolvimento;
-  - Busca por soluções durante problemas e dificuldades do projeto.
-
-- **Resolução de Problemas**
-  - Investigação de problemas técnicos;
-  - Análise de dados e logs;
-  - Identificação de falhas em integrações;
-  - Busca pela causa do problema antes do direcionamento para outras equipes.
+**Trabalho em Equipe**: Atuei como ponte entre cliente e desenvolvedores, participando das decisões técnicas do projeto e compartilhando soluções com o time, o que contribuiu para que as entregas de cada sprint estivessem alinhadas com a expectativa do cliente.
 
 ##### O que gostaria de desenvolver
 
-- **Liderança**
-  - Desenvolver minha capacidade de liderar equipes;
-  - Melhorar a distribuição e acompanhamento de atividades;
-  - Aprender a apoiar a equipe na resolução de dificuldades.
+**Comunicação em Público**: Nas apresentações das sprints percebi que preciso ganhar mais confiança ao apresentar, especialmente ao explicar conteúdo técnico de forma simples e objetiva para clientes e avaliadores.
 
-- **Gestão de Projetos**
-  - Aprofundar conhecimentos em metodologias ágeis;
-  - Melhorar planejamento e acompanhamento de projetos;
-  - Desenvolver conhecimentos em gestão de riscos e prioridades.
+**Liderança e Gestão de Equipes**: Como PO, acompanhei de perto o trabalho do time e senti a necessidade de melhorar a distribuição de atividades, o acompanhamento das tarefas e a forma de dar feedback para apoiar colegas com dificuldades.
 
-- **Inglês Profissional**
-  - Aprimorar conversação;
-  - Desenvolver vocabulário técnico de TI;
-  - Melhorar a comunicação em reuniões e ambientes profissionais.
+**Gestão de Projetos**: A priorização do backlog me mostrou a importância de planejar bem e antecipar riscos. Quero aprofundar metodologias ágeis e técnicas de gestão de riscos e prioridades.
 
-- **Tomada de Decisão**
-  - Desenvolver análise de cenários;
-  - Melhorar a definição de prioridades;
-  - Tomar decisões com base em informações e dados.
+**Tomada de Decisão**: Decidir prioridades de entrega com prazos curtos exigiu analisar cenários rapidamente. Quero desenvolver uma tomada de decisão mais embasada em dados e na análise de impacto.
 
-- **Gestão de Equipes**
-  - Desenvolver habilidades para coordenar pessoas;
-  - Melhorar o acompanhamento das atividades da equipe;
-  - Aprender técnicas de feedback e desenvolvimento de pessoas.
+**Inglês Profissional**: Grande parte da documentação técnica que consultei durante o projeto está em inglês, e quero aprimorar vocabulário técnico e conversação para atuar com mais segurança em reuniões e ambientes profissionais.
 
 <br><hr><br>
 
