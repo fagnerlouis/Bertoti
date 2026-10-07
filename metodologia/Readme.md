@@ -3,7 +3,7 @@
 
   <h1>Fagner Louis</h1>
   
-  <h3 style="color: #666;">Administrador de Banco de Dados | Analista de Suporte N2</h3>
+  <h3 style="color: #666;">Administrador de Banco de Dados | Consultor SAP B1</h3>
   
   <br>
 
