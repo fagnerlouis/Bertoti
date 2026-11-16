@@ -101,31 +101,47 @@ tentativas, limiar de confiança e dados do GitHub).
 
 ---
 
-## Minha contribuição: base de conhecimento com RAG
-
-Fiquei responsável pela parte do agente que **ensina**: a base de conhecimento sobre Git e
-GitHub e a busca que o agente usa para explicar os conceitos ao usuário.
-
-**O que implementei:**
-
-- **`KnowledgeService`**: o Receiver do comando `KnowledgeSearchCommand`. Ele faz busca
-  semântica (RAG) num banco vetorial com o `SimpleVectorStore` do Spring AI.
-- **`VectorStoreConfig`**: a configuração do banco vetorial e do documento de conhecimento.
-- **`knowledge/git-github.md`**: o conteúdo didático que o agente consulta.
-- **Fatiamento por seção**: o documento é dividido em trechos a cada título `##`, e não
-  por número de caracteres. Assim cada trecho trata de um assunto só, e a busca devolve uma
-  explicação completa em vez de meio parágrafo.
-- **Ingestão preguiçosa**: o documento só é carregado no banco vetorial na primeira
-  consulta, e uma única vez.
-- **Fallback para acervo em memória**: nem todo modelo rodando no llama.cpp oferece
-  embeddings. Quando o banco vetorial não está disponível, o serviço passa a usar um acervo
-  local de conceitos (status, branch, checkout, commit, add, push, pull request, merge,
-  remoto, clone). O agente continua ensinando; só a qualidade da busca muda.
-- **`KnowledgeServiceTest`**: testes dos dois modos (com e sem banco vetorial). Criei um
-  modelo de embeddings falso, baseado em palavras-chave, para que o teste seja
-  determinístico e não dependa do LLM estar no ar.
-
-**Por que essa parte importa:** o objetivo do agente é fazer onboarding, não só executar
-comandos. É a base de conhecimento que permite a ele explicar *por que* cada passo está
-sendo feito. Com o fallback, essa função continua de pé mesmo numa máquina modesta, onde o
-modelo local não suporta embeddings.
+## Minha contribuição: escolha e integração do modelo de IA
+ 
+Fiquei responsável por **escolher o modelo de linguagem** que o agente usa e por
+**integrá-lo ao projeto**. Isso inclui o caminho inteiro entre o código Java e o LLM.
+ 
+**A escolha do modelo:**
+ 
+- **Requisitos:** o modelo tinha que ser **aberto** e **rodar localmente na máquina da
+  FATEC**, sem serviço pago nem chave de API. A regra que adotei foi usar o menor modelo
+  que desse conta da tarefa.
+- **Candidatos avaliados:** Gemma 2 (2B e 4B) e Qwen 3. Escolhi o **Gemma 2 2B Instruct**
+  quantizado em `Q4_K_M`. Ele roda numa máquina modesta e é suficiente para montar planos
+  curtos de operações Git.
+- **Runtime:** escolhi o **llama.cpp** (`llama-server`) em vez do Ollama, que estava
+  instável na época. O `llama-server` expõe uma API compatível com a da OpenAI, então o
+  projeto se conecta a ele com o starter oficial do Spring AI
+  (`spring-ai-starter-model-openai`), sem nenhuma biblioteca de IA extra.
+**A integração:**
+ 
+- **`application.yml`**: aponta o Spring AI para o servidor local (`base-url`
+  `http://localhost:8080`, modelo `gemma-2-2b-it`, `api-key` fictícia) e usa
+  `temperature: 0.2` para respostas mais previsíveis. O Tomcat foi movido para a porta
+  8081 para não colidir com o `llama-server`.
+- **`LlmConfig`**: monta o `ChatClient` com um system prompt curto de propósito, já que
+  modelos pequenos se perdem em prompts longos.
+- **`LlmGateway`**: a **única porta de saída** para o LLM. Nenhuma estratégia, estado ou
+  comando conhece o Spring AI. Por isso o resto do projeto é testável sem o modelo
+  carregado, e trocar de LLM exige mudar um único ponto.
+- **Saída em JSON forçada**: o gateway pede `response_format: json_object`. Com isso o
+  llama.cpp restringe a geração a JSON válido usando uma gramática interna. O Gemma 2B
+  errava o formato do plano com frequência quando o pedido vinha só no texto do prompt, e
+  essa opção corta o problema na origem.
+- **`PromptTemplates`**: o contrato de planejamento. Monta o prompt com o catálogo de
+  ferramentas, o histórico da sessão e o pedido do usuário, e lê a resposta. A leitura é
+  tolerante com os erros típicos de modelos pequenos (bloco ```` ```json ````, frase antes
+  do objeto, `confidence` como texto). O que não der para ler com segurança vira
+  escalonamento para o humano, nunca um chute.
+- **`LlmGatewayManualTest`**: o teste de aceite da integração. O contexto Spring sobe
+  sempre, e a chamada real ao modelo só roda com `-Dllm.local=true`, para que a suíte de
+  testes não dependa do servidor estar no ar.
+**Por que essa parte importa:** o modelo é o que transforma o pedido em linguagem natural
+num plano executável. Com um modelo aberto e local, o projeto roda sem custo e sem
+internet. Com o gateway isolado e a saída em JSON forçada, um modelo pequeno se torna
+confiável o bastante para o agente funcionar.
